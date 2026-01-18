@@ -4,91 +4,248 @@
         <title>Mohanad Games | مهند عطية</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="مطوّر الألعاب مهند عطية، مؤسس استوديو Mohanad Games. تصميم وتطوير ألعاب من الفكرة إلى الإطلاق، بالعربية مع ترجمة إنجليزية." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
         <style>
-            body, h1, h2, h3, p, a, li { font-family: 'Cairo', sans-serif !important; }
+            :root {
+                --font-ar: "Cairo", sans-serif;
+                --font-en: "Space Grotesk", sans-serif;
+            }
+
+            body, h1, h2, h3, p, a, li, button {
+                font-family: var(--font-ar) !important;
+            }
+
+            .lang-ar,
+            .lang-en {
+                display: inline;
+            }
+
+            .lang-en {
+                font-family: var(--font-en) !important;
+                letter-spacing: 0.02em;
+            }
+
+            html[lang="ar"] .lang-en {
+                display: none;
+            }
+
+            html[lang="en"] .lang-ar {
+                display: none;
+            }
+
+            .lang-toggle {
+                position: fixed;
+                top: 1.5em;
+                right: 1.5em;
+                z-index: 1000;
+                padding: 0.55em 1.1em;
+                border-radius: 999px;
+                border: 0;
+                background: rgba(15, 31, 46, 0.88);
+                color: #ffffff;
+                font-size: 0.85em;
+                cursor: pointer;
+                box-shadow: 0 12px 30px rgba(15, 31, 46, 0.25);
+            }
+
+            .lang-toggle:hover {
+                background: rgba(15, 31, 46, 0.95);
+            }
+
+            .lang-toggle:focus-visible {
+                outline: 2px solid rgba(255, 179, 71, 0.9);
+                outline-offset: 3px;
+            }
+
+            html[dir="rtl"] .lang-toggle {
+                left: 1.5em;
+                right: auto;
+            }
+
+            @media screen and (max-width: 736px) {
+                .lang-toggle {
+                    top: 1em;
+                }
+            }
+
+            html[dir="rtl"] body {
+                text-align: right;
+            }
+
+            html[dir="rtl"] ul.actions {
+                margin-right: -1em;
+                margin-left: 0;
+            }
+
+            html[dir="rtl"] ul.actions li {
+                padding: 0 1em 0 0;
+            }
+
+            html[dir="rtl"] ul.actions.special li:first-child {
+                padding-right: 0;
+            }
+
+            html[dir="rtl"] ul.icons.labeled {
+                text-align: right;
+            }
+
+            html[dir="rtl"] ul.icons.labeled li {
+                padding: 0 0 0 2em;
+            }
+
+            html[dir="rtl"] ul.icons.labeled li .icon:before {
+                margin-left: 0.5em;
+                margin-right: 0;
+            }
+
+            html[dir="rtl"] .spotlight {
+                text-align: right;
+            }
+
+            html[dir="rtl"] .spotlight .image {
+                margin: 0 0 0 3em;
+            }
+
+            html[dir="rtl"] .spotlight:nth-child(2n) {
+                flex-direction: row;
+            }
+
+            html[dir="rtl"] .spotlight:nth-child(2n) .image {
+                margin: 0 0 0 3em;
+            }
+
+            html[dir="rtl"] .spotlight:nth-child(2n) .content {
+                text-align: right;
+            }
         </style>
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
     <body class="is-preload">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-pressed="false">English</button>
 
         <header id="header">
-                <div class="content">
-                    <h1><a href="#">Mohanad Games</a></h1>
-                    <p>مرحباً بك في عالمي! أنا <strong>مهند عطية</strong>، مطور ألعاب شغوف ومؤسس استديو Mohanad Games.<br />
-                    أقوم بتحويل الأفكار الخيالية إلى تجارب تفاعلية ممتعة.</p>
-                    <ul class="actions">
-                        <li><a href="#three" class="button primary icon solid fa-gamepad">أحدث أعمالي</a></li>
-                        <li><a href="#one" class="button icon solid fa-chevron-down scrolly">اكتشف المزيد</a></li>
-                    </ul>
-                </div>
-                <div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="Mohanad Games" /></div></div>
-            </header>
+            <div class="content">
+                <h1><a href="#"><span class="lang-ar" lang="ar" dir="rtl">Mohanad Games</span><span class="lang-en" lang="en" dir="ltr">Mohanad Games</span></a></h1>
+                <p><span class="lang-ar" lang="ar" dir="rtl">مرحباً بك في عالمي! أنا <strong>مهند عطية</strong>، مطور ألعاب شغوف ومؤسس استديو Mohanad Games.<br />
+                أقوم بتحويل الأفكار الخيالية إلى تجارب تفاعلية ممتعة.</span><span class="lang-en" lang="en" dir="ltr">Welcome to my world! I'm <strong>Mohanad Atiyah</strong>, a passionate game developer and founder of Mohanad Games.<br />
+                I turn imaginative ideas into fun, interactive experiences.</span></p>
+                <ul class="actions">
+                    <li><a href="#three" class="button primary icon solid fa-gamepad"><span class="lang-ar" lang="ar" dir="rtl">أحدث أعمالي</span><span class="lang-en" lang="en" dir="ltr">Latest work</span></a></li>
+                    <li><a href="#one" class="button icon solid fa-chevron-down scrolly"><span class="lang-ar" lang="ar" dir="rtl">اكتشف المزيد</span><span class="lang-en" lang="en" dir="ltr">Discover more</span></a></li>
+                </ul>
+            </div>
+            <div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="Mohanad Games" data-alt-ar="Mohanad Games" data-alt-en="Mohanad Games" /></div></div>
+        </header>
 
         <section id="one" class="wrapper style2 special">
-                <header class="major">
-                    <h2>ماذا نقدم في استديو Mohanad Games؟</h2>
-                </header>
-                <ul class="icons major">
-                    <li><span class="icon solid fa-code"><span class="label">برمجة</span></span><p>تطوير ألعاب باستخدام أحدث المحركات.</p></li>
-                    <li><span class="icon solid fa-paint-brush"><span class="label">تصميم</span></span><p>تصميم بيئات وشخصيات فريدة.</p></li>
-                    <li><span class="icon solid fa-mobile-alt"><span class="label">منصات</span></span><p>ألعاب مخصصة للجوال والحاسوب.</p></li>
-                </ul>
-            </section>
+            <header class="major">
+                <h2><span class="lang-ar" lang="ar" dir="rtl">ماذا نقدم في استديو Mohanad Games؟</span><span class="lang-en" lang="en" dir="ltr">What do we offer at Mohanad Games Studio?</span></h2>
+            </header>
+            <ul class="icons major">
+                <li><span class="icon solid fa-code"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">برمجة</span><span class="lang-en" lang="en" dir="ltr">Programming</span></span></span><p><span class="lang-ar" lang="ar" dir="rtl">تطوير ألعاب باستخدام أحدث المحركات.</span><span class="lang-en" lang="en" dir="ltr">Developing games with the latest engines.</span></p></li>
+                <li><span class="icon solid fa-paint-brush"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">تصميم</span><span class="lang-en" lang="en" dir="ltr">Design</span></span></span><p><span class="lang-ar" lang="ar" dir="rtl">تصميم بيئات وشخصيات فريدة.</span><span class="lang-en" lang="en" dir="ltr">Designing unique environments and characters.</span></p></li>
+                <li><span class="icon solid fa-mobile-alt"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">منصات</span><span class="lang-en" lang="en" dir="ltr">Platforms</span></span></span><p><span class="lang-ar" lang="ar" dir="rtl">ألعاب مخصصة للجوال والحاسوب.</span><span class="lang-en" lang="en" dir="ltr">Custom games for mobile and PC.</span></p></li>
+            </ul>
+        </section>
 
         <section id="two" class="wrapper">
-                <div class="inner alt">
-                    <section class="spotlight">
-                        <div class="image"><img src="images/pic01.jpg" alt="Game 1" /></div>
-                        <div class="content">
-                            <h3>لعبة الأكشن الأولى</h3>
-                            <p>هنا يمكنك كتابة وصف قصير عن لعبتك الأولى، ما هي قصتها؟ وما الذي يميزها؟</p>
-                        </div>
-                    </section>
-                    <section class="spotlight">
-                        <div class="image"><img src="images/pic02.jpg" alt="Game 2" /></div>
-                        <div class="content">
-                            <h3>لعبة المغامرات</h3>
-                            <p>وصف للعبة أخرى من إنتاج Mohanad Games. استعرض مهاراتك في تصميم المستويات.</p>
-                        </div>
-                    </section>
-                    <section class="special">
-                        <header class="major">
-                            <h3>لماذا Mohanad Games؟</h3>
-                            <p>نحن لا نصنع مجرد ألعاب، نحن نصنع تجارب لا تُنسى تعتمد على الابتكار وجودة التنفيذ.</p>
-                        </header>
-                    </section>
-                </div>
-            </section>
+            <div class="inner alt">
+                <section class="spotlight">
+                    <div class="image"><img src="images/pic01.jpg" alt="لعبة الأكشن الأولى" data-alt-ar="لعبة الأكشن الأولى" data-alt-en="First action game" /></div>
+                    <div class="content">
+                        <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة الأكشن الأولى</span><span class="lang-en" lang="en" dir="ltr">First action game</span></h3>
+                        <p><span class="lang-ar" lang="ar" dir="rtl">هنا يمكنك كتابة وصف قصير عن لعبتك الأولى، ما هي قصتها؟ وما الذي يميزها؟</span><span class="lang-en" lang="en" dir="ltr">Share a short description of your first game, its story, and what makes it stand out.</span></p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="image"><img src="images/pic02.jpg" alt="لعبة المغامرات" data-alt-ar="لعبة المغامرات" data-alt-en="Adventure game" /></div>
+                    <div class="content">
+                        <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة المغامرات</span><span class="lang-en" lang="en" dir="ltr">Adventure game</span></h3>
+                        <p><span class="lang-ar" lang="ar" dir="rtl">وصف للعبة أخرى من إنتاج Mohanad Games. استعرض مهاراتك في تصميم المستويات.</span><span class="lang-en" lang="en" dir="ltr">Describe another Mohanad Games title and highlight your level design skills.</span></p>
+                    </div>
+                </section>
+                <section class="special">
+                    <header class="major">
+                        <h3><span class="lang-ar" lang="ar" dir="rtl">لماذا Mohanad Games؟</span><span class="lang-en" lang="en" dir="ltr">Why Mohanad Games?</span></h3>
+                        <p><span class="lang-ar" lang="ar" dir="rtl">نحن لا نصنع مجرد ألعاب، نحن نصنع تجارب لا تُنسى تعتمد على الابتكار وجودة التنفيذ.</span><span class="lang-en" lang="en" dir="ltr">We don't just make games—we craft memorable experiences powered by innovation and quality.</span></p>
+                    </header>
+                </section>
+            </div>
+        </section>
 
         <section id="three" class="wrapper style2 special">
-                <header class="major">
-                    <h2>هل لديك فكرة لعبة تريد تنفيذها؟</h2>
-                    <p>أنا متاح دائماً للتعاون في مشاريع الألعاب المبدعة.</p>
-                </header>
-                <ul class="actions special">
-                    <li><a href="mailto:contact@mohanadgames.com" class="button primary icon solid fa-envelope">تواصل معي</a></li>
-                    <li><a href="#" class="button">قناتي على يوتيوب</a></li>
-                </ul>
-            </section>
+            <header class="major">
+                <h2><span class="lang-ar" lang="ar" dir="rtl">هل لديك فكرة لعبة تريد تنفيذها؟</span><span class="lang-en" lang="en" dir="ltr">Have a game idea you want to build?</span></h2>
+                <p><span class="lang-ar" lang="ar" dir="rtl">أنا متاح دائماً للتعاون في مشاريع الألعاب المبدعة.</span><span class="lang-en" lang="en" dir="ltr">I'm always open to collaborating on creative game projects.</span></p>
+            </header>
+            <ul class="actions special">
+                <li><a href="mailto:contact@mohanadgames.com" class="button primary icon solid fa-envelope"><span class="lang-ar" lang="ar" dir="rtl">تواصل معي</span><span class="lang-en" lang="en" dir="ltr">Contact me</span></a></li>
+                <li><a href="#" class="button"><span class="lang-ar" lang="ar" dir="rtl">قناتي على يوتيوب</span><span class="lang-en" lang="en" dir="ltr">My YouTube channel</span></a></li>
+            </ul>
+        </section>
 
         <footer id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                </ul>
-                <p class="copyright">&copy; Mohanad Games 2026. كل الحقوق محفوظة.</p>
-            </footer>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">فيسبوك</span><span class="lang-en" lang="en" dir="ltr">Facebook</span></span></a></li>
+                <li><a href="#" class="icon brands fa-twitter"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">تويتر</span><span class="lang-en" lang="en" dir="ltr">Twitter</span></span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">انستغرام</span><span class="lang-en" lang="en" dir="ltr">Instagram</span></span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">GitHub</span><span class="lang-en" lang="en" dir="ltr">GitHub</span></span></a></li>
+            </ul>
+            <p class="copyright"><span class="lang-ar" lang="ar" dir="rtl">&copy; Mohanad Games 2026. كل الحقوق محفوظة.</span><span class="lang-en" lang="en" dir="ltr">&copy; Mohanad Games 2026. All rights reserved.</span></p>
+        </footer>
 
         <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            (function () {
+                var toggle = document.getElementById('lang-toggle');
+                if (!toggle) {
+                    return;
+                }
+                var root = document.documentElement;
+
+                function applyLang(lang) {
+                    var useEnglish = lang === 'en';
+                    root.setAttribute('lang', useEnglish ? 'en' : 'ar');
+                    root.setAttribute('dir', useEnglish ? 'ltr' : 'rtl');
+                    toggle.textContent = useEnglish ? 'العربية' : 'English';
+                    toggle.setAttribute('aria-pressed', useEnglish ? 'true' : 'false');
+                    toggle.setAttribute('aria-label', useEnglish ? 'التبديل إلى العربية' : 'Switch to English');
+                    try {
+                        localStorage.setItem('lang', useEnglish ? 'en' : 'ar');
+                    } catch (err) {
+                        // Ignore storage errors.
+                    }
+
+                    var images = document.querySelectorAll('[data-alt-ar][data-alt-en]');
+                    images.forEach(function (img) {
+                        img.setAttribute('alt', img.getAttribute(useEnglish ? 'data-alt-en' : 'data-alt-ar'));
+                    });
+
+                    document.title = useEnglish ? 'Mohanad Games | Game Developer' : 'Mohanad Games | مهند عطية';
+                }
+
+                var stored = null;
+                try {
+                    stored = localStorage.getItem('lang');
+                } catch (err) {
+                    stored = null;
+                }
+
+                applyLang(stored === 'en' ? 'en' : 'ar');
+                toggle.addEventListener('click', function () {
+                    applyLang(root.getAttribute('lang') === 'ar' ? 'en' : 'ar');
+                });
+            })();
+        </script>
 
     </body>
 </html>
