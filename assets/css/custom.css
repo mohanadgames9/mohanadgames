@@ -253,9 +253,40 @@ header.major:after {
     margin: 0 0 1.25rem 0;
 }
 @media screen and (max-width: 736px) {
+    ul.actions li {
+        padding-top: 0.75em;
+    }
+
+    ul.actions li:first-child {
+        padding-top: 0;
+    }
+
+    html[dir="rtl"] ul.actions li {
+        padding: 0.75em 0 0 0;
+    }
+
+    html[dir="rtl"] ul.actions li:first-child {
+        padding-top: 0;
+    }
+
     html[dir="rtl"] .spotlight .content {
         flex: 0 1 auto;
         width: 100%;
+    }
+
+    .wrapper {
+        padding-top: 2.5em;
+        padding-bottom: 1.5em;
+    }
+
+    #header {
+        padding-top: 3em;
+        padding-bottom: 1.5em;
+    }
+
+    #footer {
+        padding-top: 2.5em;
+        padding-bottom: 1.5em;
     }
 
     #two {
@@ -282,6 +313,15 @@ header.major:after {
 
     #two .spotlight .content p {
         margin-bottom: 0 !important;
+    }
+
+    html[dir="rtl"] ul.actions:not(.fixed) li input[type="submit"].icon:before,
+    html[dir="rtl"] ul.actions:not(.fixed) li input[type="reset"].icon:before,
+    html[dir="rtl"] ul.actions:not(.fixed) li input[type="button"].icon:before,
+    html[dir="rtl"] ul.actions:not(.fixed) li button.icon:before,
+    html[dir="rtl"] ul.actions:not(.fixed) li .button.icon:before {
+        margin-left: 0.5em;
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 980px) {
