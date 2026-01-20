@@ -252,6 +252,22 @@ header.major:after {
 #footer .privacy {
     margin: 0 0 1.25rem 0;
 }
+
+#footer .privacy .button {
+    background: none;
+    box-shadow: none;
+    border: 0;
+    height: auto;
+    line-height: inherit;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#footer .privacy .button:hover {
+    background: none;
+}
 @media screen and (max-width: 736px) {
     ul.actions li {
         padding-top: 0.75em;
@@ -327,5 +343,22 @@ header.major:after {
 @media screen and (max-width: 980px) {
     #header .content {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    ul.actions {
+        flex-wrap: wrap;
+        gap: 0.75em 1em;
+    }
+
+    ul.actions li {
+        padding: 0;
+        width: auto;
+        flex: 0 1 auto;
+    }
+
+    html[dir="rtl"] ul.actions li {
+        padding: 0;
     }
 }
