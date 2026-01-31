@@ -17,6 +17,12 @@ body, h1, h2, h3, p, a, li, button {
     letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 980px) {
+    #header {
+        background-attachment: scroll, scroll;
+    }
+}
+
 html[lang="ar"] .lang-en {
     display: none;
 }
