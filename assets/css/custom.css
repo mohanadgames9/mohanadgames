@@ -7,6 +7,27 @@ body, h1, h2, h3, p, a, li, button {
     font-family: var(--font-ar) !important;
 }
 
+body {
+    color: #3f3f3f;
+}
+
+#header,
+#header .content,
+#header p,
+#header .content p,
+#header .icon {
+    color: #f4f8ff;
+}
+
+#header .button:not(.primary) {
+    color: #ffffff !important;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+#header .button:not(.primary):hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
 .lang-ar,
 .lang-en {
     display: inline;
