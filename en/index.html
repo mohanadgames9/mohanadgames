@@ -3,7 +3,7 @@
     <head>
         <title>Mohanad Games | Game Development Studio</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Mohanad Games is a game development studio building imaginative mobile experiences with creative design and polished gameplay." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://mohanadgames.com/en/" />
@@ -29,6 +29,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
         <link rel="apple-touch-icon" sizes="512x512" href="/images/logo.png" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; frame-ancestors 'none'" />
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -68,9 +69,12 @@
                 }
             }
         </script>
+        <link rel="preload" as="image" href="/images/screen.jpg" fetchpriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="preload" href="/assets/css/fontawesome-all.min.css" as="style" />
+        <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
         <link rel="stylesheet" href="/assets/css/custom.css" />
         <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
@@ -89,9 +93,10 @@
                     <li><a href="#one" class="button icon solid fa-chevron-down scrolly"><span class="lang-ar" lang="ar" dir="rtl">اكتشف المزيد</span><span class="lang-en" lang="en" dir="ltr">Discover more</span></a></li>
                 </ul>
             </div>
-            <div class="image phone"><div class="inner"><img src="/images/screen.jpg" alt="Mohanad Games" data-alt-ar="Mohanad Games" data-alt-en="Mohanad Games" /></div></div>
+            <div class="image phone"><div class="inner"><img src="/images/screen.jpg" alt="Mohanad Games" data-alt-ar="Mohanad Games" data-alt-en="Mohanad Games" width="221" height="320" decoding="async" fetchpriority="high" /></div></div>
         </header>
 
+        <main id="main">
         <section id="one" class="wrapper style2 special">
             <header class="major">
                 <h2><span class="lang-ar" lang="ar" dir="rtl">ماذا نقدم في استديو Mohanad Games؟</span><span class="lang-en" lang="en" dir="ltr">What do we offer at Mohanad Games Studio?</span></h2>
@@ -106,14 +111,14 @@
         <section id="two" class="wrapper">
             <div class="inner alt">
                 <section class="spotlight">
-                    <div class="image"><img src="/images/rayan.jpg" alt="لعبة يوميات ريان" data-alt-ar="لعبة يوميات ريان" data-alt-en="Rayan's Diary" /></div>
+                    <div class="image"><img src="/images/rayan.jpg" alt="لعبة يوميات ريان" data-alt-ar="لعبة يوميات ريان" data-alt-en="Rayan's Diary" width="250" height="250" loading="lazy" decoding="async" /></div>
                     <div class="content">
                         <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة يوميات ريان</span><span class="lang-en" lang="en" dir="ltr">Rayan's Diary</span></h3>
                         <p><span class="lang-ar" lang="ar" dir="rtl">لعبة تحكي قصة شاب كسول اسمه ريان وعلينا مساعدته ليتجاوز اليوم بخير وسلامة</span><span class="lang-en" lang="en" dir="ltr">A game about a lazy young man named Rayan, where we help him make it through the day safe and sound.</span></p>
                     </div>
                 </section>
                 <section class="spotlight">
-                    <div class="image"><img src="/images/shaker.jpg" alt="قصة حب شاكر" data-alt-ar="قصة حب شاكر" data-alt-en="Shaker's Love Story" /></div>
+                    <div class="image"><img src="/images/shaker.jpg" alt="قصة حب شاكر" data-alt-ar="قصة حب شاكر" data-alt-en="Shaker's Love Story" width="250" height="250" loading="lazy" decoding="async" /></div>
                     <div class="content">
                         <h3><span class="lang-ar" lang="ar" dir="rtl">قصة حب شاكر</span><span class="lang-en" lang="en" dir="ltr">Shaker's Love Story</span></h3>
                         <p><span class="lang-ar" lang="ar" dir="rtl">من ألعاب القصة التي تحكي قصة حب شاكر وتالا وسفرهم حول الدول العربية حيث يواجهون الكثير من المغامرات</span><span class="lang-en" lang="en" dir="ltr">A story-driven game about the love story of Shaker and Tala and their travels across Arab countries, where they face many adventures.</span></p>
@@ -148,12 +153,13 @@
                 <li><a href="https://www.instagram.com/mohnad_dev" class="button"><span class="lang-ar" lang="ar" dir="rtl">انستغرامي</span><span class="lang-en" lang="en" dir="ltr">My Instagram</span></a></li>
             </ul>
         </section>
+        </main>
         <footer id="footer">
             <ul class="icons">
-                <li><a href="https://www.facebook.com/mohanadgames9/" class="icon brands fa-facebook-f"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">فيسبوك</span><span class="lang-en" lang="en" dir="ltr">Facebook</span></span></a></li>
-                <li><a href="https://www.instagram.com/mohnad_dev" class="icon brands fa-instagram"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">انستغرام</span><span class="lang-en" lang="en" dir="ltr">Instagram</span></span></a></li>
-                <li><a href="https://www.youtube.com/channel/UCLDBbjBC-BsjFqyLDtEZr2A" class="icon brands fa-youtube"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">يوتيوب</span><span class="lang-en" lang="en" dir="ltr">YouTube</span></span></a></li>
-                <li><a href="https://www.tiktok.com/@mohanaddevelopergame" class="icon brands fa-tiktok"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">تيكتوك</span><span class="lang-en" lang="en" dir="ltr">TikTok</span></span></a></li>
+                <li><a href="https://www.facebook.com/mohanadgames9/" class="icon brands fa-facebook-f" aria-label="Facebook / فيسبوك"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">فيسبوك</span><span class="lang-en" lang="en" dir="ltr">Facebook</span></span></a></li>
+                <li><a href="https://www.instagram.com/mohnad_dev" class="icon brands fa-instagram" aria-label="Instagram / انستغرام"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">انستغرام</span><span class="lang-en" lang="en" dir="ltr">Instagram</span></span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCLDBbjBC-BsjFqyLDtEZr2A" class="icon brands fa-youtube" aria-label="YouTube / يوتيوب"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">يوتيوب</span><span class="lang-en" lang="en" dir="ltr">YouTube</span></span></a></li>
+                <li><a href="https://www.tiktok.com/@mohanaddevelopergame" class="icon brands fa-tiktok" aria-label="TikTok / تيكتوك"><span class="label"><span class="lang-ar" lang="ar" dir="rtl">تيكتوك</span><span class="lang-en" lang="en" dir="ltr">TikTok</span></span></a></li>
             </ul>
 
             <p class="privacy"><span class="lang-ar" lang="ar" dir="rtl"><a class="button small" href="/privacy-policy/">سياسة الخصوصية</a></span><span class="lang-en" lang="en" dir="ltr"><a class="button small" href="/privacy-policy/">Privacy Policy</a></span></p>
@@ -167,50 +173,7 @@
         <script src="/assets/js/breakpoints.min.js"></script>
         <script src="/assets/js/util.js"></script>
         <script src="/assets/js/main.js"></script>
-        <script>
-            (function () {
-                var toggle = document.getElementById('lang-toggle');
-                if (!toggle) {
-                    return;
-                }
-                var root = document.documentElement;
-
-                function applyLang(lang) {
-                    var useEnglish = lang === 'en';
-                    root.setAttribute('lang', useEnglish ? 'en' : 'ar');
-                    root.setAttribute('dir', useEnglish ? 'ltr' : 'rtl');
-                    toggle.textContent = useEnglish ? 'العربية' : 'English';
-                    toggle.setAttribute('aria-pressed', useEnglish ? 'true' : 'false');
-                    toggle.setAttribute('aria-label', useEnglish ? 'التبديل إلى العربية' : 'Switch to English');
-                    try {
-                        localStorage.setItem('lang', useEnglish ? 'en' : 'ar');
-                    } catch (err) {
-                        // Ignore storage errors.
-                    }
-
-                    var images = document.querySelectorAll('[data-alt-ar][data-alt-en]');
-                    images.forEach(function (img) {
-                        img.setAttribute('alt', img.getAttribute(useEnglish ? 'data-alt-en' : 'data-alt-ar'));
-                    });
-
-                    document.title = useEnglish ? 'Mohanad Games | Game Development Studio' : 'ألعاب مهند | استديو تطوير ألعاب';
-                }
-
-                var stored = null;
-                try {
-                    stored = localStorage.getItem('lang');
-                } catch (err) {
-                    stored = null;
-                }
-
-                var defaultLang = root.getAttribute('lang') === 'en' ? 'en' : 'ar';
-                var nextLang = stored === 'en' || stored === 'ar' ? stored : defaultLang;
-                applyLang(nextLang);
-                toggle.addEventListener('click', function () {
-                    applyLang(root.getAttribute('lang') === 'ar' ? 'en' : 'ar');
-                });
-            })();
-        </script>
+        <script src="/assets/js/lang-toggle.js" defer></script>
 
     </body>
 </html>
