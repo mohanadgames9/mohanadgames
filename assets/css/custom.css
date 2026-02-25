@@ -295,6 +295,121 @@ header.major:after {
 #footer .privacy .button:hover {
     background: none;
 }
+
+#seo-services {
+    background: #ffffff;
+}
+
+#seo-services .major {
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+#seo-services .major p {
+    margin-bottom: 0;
+}
+
+#seo-services .seo-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+#seo-services .seo-points li {
+    background: #f6f8fb;
+    border: 1px solid rgba(15, 31, 46, 0.1);
+    border-radius: 0.7rem;
+    padding: 1rem 1rem 0.9rem;
+}
+
+#seo-services .seo-points h3 {
+    margin-bottom: 0.45rem;
+}
+
+#seo-services .seo-points p {
+    margin: 0;
+    color: #545454;
+}
+
+#faq {
+    background: #f6f8fb;
+}
+
+#faq .faq-inner {
+    width: min(62rem, 100%);
+    margin: 0 auto;
+}
+
+#faq .major {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#faq .major p {
+    margin-bottom: 0;
+}
+
+#faq .faq-list {
+    display: grid;
+    gap: 0.85rem;
+}
+
+#faq details {
+    background: #ffffff;
+    border: 1px solid rgba(26, 35, 45, 0.12);
+    border-radius: 0.7rem;
+    padding: 0.95rem 1.1rem;
+    box-shadow: 0 8px 20px rgba(15, 31, 46, 0.06);
+}
+
+#faq summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+#faq summary::-webkit-details-marker {
+    display: none;
+}
+
+#faq summary::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    flex: 0 0 1.35rem;
+    border-radius: 999px;
+    background: rgba(15, 31, 46, 0.1);
+    color: #0f1f2e;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#faq details[open] summary::before {
+    content: "-";
+}
+
+#faq details p {
+    margin: 0.7rem 0 0 0;
+    color: #545454;
+}
+
+html[dir="rtl"] #faq summary {
+    text-align: right;
+}
+
+html[dir="rtl"] #faq summary::before {
+    order: 2;
+}
+
 @media screen and (max-width: 736px) {
     ul.actions li {
         padding-top: 0.75em;
@@ -356,6 +471,15 @@ header.major:after {
 
     #two .spotlight .content p {
         margin-bottom: 0 !important;
+    }
+
+    #faq details {
+        padding: 0.85rem 0.9rem;
+    }
+
+    #seo-services .seo-points {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
 
     html[dir="rtl"] ul.actions:not(.fixed) li input[type="submit"].icon:before,
