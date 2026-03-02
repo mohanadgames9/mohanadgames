@@ -178,7 +178,7 @@
                     <li><a href="#one" class="button icon solid fa-chevron-down scrolly"><span class="lang-ar" lang="ar" dir="rtl">اكتشف المزيد</span><span class="lang-en" lang="en" dir="ltr">Discover more</span></a></li>
                 </ul>
             </div>
-            <div class="image phone"><div class="inner"><img src="/images/screen.jpg" srcset="/images/screen.jpg 1x, /images/screen@2x.jpg 2x" sizes="(max-width: 736px) 200px, 221px" alt="Mohanad Games game development company showcase" data-alt-ar="شركة برمجة ألعاب Mohanad Games" data-alt-en="Mohanad Games game development company showcase" width="221" height="320" decoding="async" fetchpriority="high" /></div></div>
+            <div class="image phone"><div class="inner"><picture><source media="(max-width: 736px)" srcset="/images/logo.png" /><img src="/images/screen.jpg" srcset="/images/screen.jpg 1x, /images/screen@2x.jpg 2x" sizes="(max-width: 736px) 160px, 221px" alt="Mohanad Games game development company showcase" data-alt-ar="شركة برمجة ألعاب Mohanad Games" data-alt-en="Mohanad Games game development company showcase" width="221" height="320" decoding="async" fetchpriority="high" /></picture></div></div>
         </header>
 
         <main id="main">
@@ -195,25 +195,33 @@
 
         <section id="two" class="wrapper">
             <div class="inner alt">
-                <section class="spotlight">
-                    <div class="image"><img src="/images/rayan.jpg" srcset="/images/rayan.jpg 1x, /images/rayan@2x.jpg 2x" sizes="(max-width: 736px) 60vw, 250px" alt="لعبة يوميات ريان" data-alt-ar="لعبة يوميات ريان" data-alt-en="Rayan's Diary" width="250" height="250" loading="lazy" decoding="async" /></div>
-                    <div class="content">
-                        <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة يوميات ريان</span><span class="lang-en" lang="en" dir="ltr">Rayan's Diary</span></h3>
-                        <p><span class="lang-ar" lang="ar" dir="rtl">لعبة تحكي قصة شاب كسول اسمه ريان وعلينا مساعدته ليتجاوز اليوم بخير وسلامة</span><span class="lang-en" lang="en" dir="ltr">A game about a lazy young man named Rayan, where we help him make it through the day safe and sound.</span></p>
-                    </div>
-                </section>
-                <section class="spotlight">
-                    <div class="image"><img src="/images/shaker.jpg" srcset="/images/shaker.jpg 1x, /images/shaker@2x.jpg 2x" sizes="(max-width: 736px) 60vw, 250px" alt="قصة حب شاكر" data-alt-ar="قصة حب شاكر" data-alt-en="Shaker's Love Story" width="250" height="250" loading="lazy" decoding="async" /></div>
-                    <div class="content">
-                        <h3><span class="lang-ar" lang="ar" dir="rtl">قصة حب شاكر</span><span class="lang-en" lang="en" dir="ltr">Shaker's Love Story</span></h3>
-                        <p><span class="lang-ar" lang="ar" dir="rtl">من ألعاب القصة التي تحكي قصة حب شاكر وتالا وسفرهم حول الدول العربية حيث يواجهون الكثير من المغامرات</span><span class="lang-en" lang="en" dir="ltr">A story-driven game about the love story of Shaker and Tala and their travels across Arab countries, where they face many adventures.</span></p>
-                    </div>
-                </section>
-                <section class="special">
+                <section class="games-showcase">
                     <header class="major">
-                        <h3><span class="lang-ar" lang="ar" dir="rtl">لماذا Mohanad Games؟</span><span class="lang-en" lang="en" dir="ltr">Why Mohanad Games?</span></h3>
-                        <p><span class="lang-ar" lang="ar" dir="rtl">كشركة تطوير ألعاب، نحن لا نصنع مجرد ألعاب؛ بل نصمم تجارب لا تُنسى تعتمد على الابتكار وجودة التنفيذ.</span><span class="lang-en" lang="en" dir="ltr">As a game development company, we do more than build games; we craft memorable experiences driven by innovation and quality execution.</span></p>
+                        <h2><span class="lang-ar" lang="ar" dir="rtl">ألعابنا</span><span class="lang-en" lang="en" dir="ltr">Our Games</span></h2>
                     </header>
+                    <div class="games-grid">
+                        <article class="game-card">
+                            <div class="image"><img src="/images/games/rayan.jpg" alt="لعبة يوميات ريان" data-alt-ar="لعبة يوميات ريان" data-alt-en="Ryan Adventures" width="250" height="250" loading="lazy" decoding="async" /></div>
+                            <div class="content">
+                                <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة يوميات ريان</span><span class="lang-en" lang="en" dir="ltr">Ryan Adventures</span></h3>
+                                <p><span class="lang-ar" lang="ar" dir="rtl">لعبة تحكي قصة شاب كسول اسمه ريان وعلينا مساعدته ليتجاوز اليوم بخير وسلامة.</span><span class="lang-en" lang="en" dir="ltr">A light adventure where Ryan faces daily challenges and needs your help to make it through the day.</span></p>
+                            </div>
+                        </article>
+                        <article class="game-card">
+                            <div class="image"><img src="/images/games/shakr.jpg" alt="قصة حب شاكر" data-alt-ar="قصة حب شاكر" data-alt-en="Shakr Love Story" width="250" height="250" loading="lazy" decoding="async" /></div>
+                            <div class="content">
+                                <h3><span class="lang-ar" lang="ar" dir="rtl">قصة حب شاكر</span><span class="lang-en" lang="en" dir="ltr">Shakr Love Story</span></h3>
+                                <p><span class="lang-ar" lang="ar" dir="rtl">لعبة قصصية تتابع رحلة شاكر وتالا عبر مغامرات متنوعة في عدة دول عربية.</span><span class="lang-en" lang="en" dir="ltr">A story-driven romance that follows Shakr and Tala through emotional moments and adventures across Arab countries.</span></p>
+                            </div>
+                        </article>
+                        <article class="game-card">
+                            <div class="image"><img src="/images/games/fred.jpg" alt="لعبة المحقق فريد" data-alt-ar="لعبة المحقق فريد" data-alt-en="Detective Fred" width="250" height="250" loading="lazy" decoding="async" /></div>
+                            <div class="content">
+                                <h3><span class="lang-ar" lang="ar" dir="rtl">لعبة المحقق فريد</span><span class="lang-en" lang="en" dir="ltr">Detective Fred</span></h3>
+                                <p><span class="lang-ar" lang="ar" dir="rtl">لعبة تحقيق ومغامرة تقود اللاعب وراء الأدلة لكشف الغموض وحل القضايا.</span><span class="lang-en" lang="en" dir="ltr">A mystery adventure where Detective Fred follows clues, reveals secrets, and solves puzzling cases.</span></p>
+                            </div>
+                        </article>
+                    </div>
                 </section>
             </div>
         </section>
