@@ -1,0 +1,387 @@
+:root {
+    --bg: #0b0f17;
+    --surface: #141b28;
+    --text: #e8ecf4;
+    --muted: #9aa8be;
+    --accent: #5b8def;
+    --accent-hover: #7aa3f5;
+    --border: rgba(255, 255, 255, 0.08);
+    --radius: 14px;
+    --max: 960px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Cairo", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+html[lang="en"] body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1.25rem 0;
+}
+
+.lang-link {
+    color: var(--muted);
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.lang-link:hover {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1.25rem 3rem;
+}
+
+.hero-logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 1.25rem;
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin: 0 auto 1.75rem;
+    max-width: 34rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid transparent;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    color: #fff;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.btn-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    width: min(100% - 2.5rem, var(--max));
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.section-title {
+    margin: 0 0 1.25rem;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.game-card {
+    width: 160px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.game-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.game-card-body {
+    padding: 0.75rem 0.85rem 0.9rem;
+}
+
+.game-card h3 {
+    margin: 0 0 0.3rem;
+    font-size: 0.95rem;
+}
+
+.game-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.btn-coins {
+    background: linear-gradient(135deg, #f5a623, #e8890c);
+    color: #1a1200;
+}
+
+.btn-coins:hover {
+    background: linear-gradient(135deg, #ffc04d, #f5a623);
+    color: #1a1200;
+}
+
+.surveys-section {
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.surveys-intro {
+    margin: 0 auto 1.25rem;
+    max-width: 32rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+#cpx-surveys {
+    max-width: 950px;
+    margin: 0 auto;
+    min-height: 120px;
+}
+
+.survey-gate,
+.survey-modal-card {
+    width: min(100%, 420px);
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.survey-gate-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.survey-field {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.survey-field label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 0.92rem;
+    color: var(--text);
+}
+
+.survey-field input {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+}
+
+.survey-field input:focus {
+    outline: 2px solid rgba(91, 141, 239, 0.45);
+    border-color: var(--accent);
+}
+
+.survey-hint {
+    margin: -0.35rem 0 1rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.survey-gate .btn,
+.survey-modal-card .btn {
+    width: 100%;
+}
+
+.survey-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.survey-modal[hidden] {
+    display: none;
+}
+
+.survey-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 8, 16, 0.72);
+}
+
+.survey-modal-card {
+    position: relative;
+    z-index: 1;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.survey-modal-actions {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.stores {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.stores p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+}
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 1.25rem;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 1.25rem;
+    color: var(--muted);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.social a:hover {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.social svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
