@@ -1,7 +1,6 @@
 (function () {
     var STORAGE_KEY = 'cpx_ext_user_id';
-    var isEnglish = document.documentElement.lang === 'en';
-    var surveysUrl = isEnglish ? '/en/surveys/' : '/surveys/';
+    var surveysUrl = '/surveys/';
 
     function readIdFromUrl() {
         var params = new URLSearchParams(window.location.search);
