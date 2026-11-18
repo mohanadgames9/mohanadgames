@@ -3,21 +3,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 | Mohanad Games</title>
+    <title>404 — الصفحة غير موجودة | Mohanad Games</title>
     <meta name="robots" content="noindex">
     <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/site.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page">
-        <header class="hero">
-            <h1>404</h1>
-            <p>الصفحة غير موجودة</p>
-            <div class="actions">
-                <a class="btn btn-primary" href="/">العودة للرئيسية</a>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="/">
+                    <img src="/images/logo-sm.png" alt="شعار Mohanad Games" width="38" height="38">
+                    <span>Mohanad Games</span>
+                </a>
+                <nav class="site-nav" aria-label="التنقل الرئيسي">
+                    <a href="/">الرئيسية</a>
+                    <a href="/games/fathal-syria/">فطحل سوريا</a>
+                    <a href="/games/">ألعابنا</a>
+                    <a href="/challenges/">تحديات وألغاز</a>
+                </nav>
             </div>
         </header>
+
+        <main style="display:flex;align-items:center;justify-content:center;text-align:center;padding-top:4rem;">
+            <div>
+                <span class="badge badge-gold">خطأ 404</span>
+                <h1 style="margin:0.5rem 0 0.75rem;">عذراً، هذه الصفحة غير موجودة</h1>
+                <p style="color:var(--muted);max-width:30rem;margin:0 auto 1.75rem;">ربما تم نقل الرابط أو حذفه. يمكنك العودة إلى الصفحة الرئيسية أو تجربة تحديات الدراما والأمثال السورية مباشرة:</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="/">الصفحة الرئيسية</a>
+                    <a class="btn btn-blue" href="/games/fathal-syria/">لعبة فطحل سوريا</a>
+                    <a class="btn btn-ghost" href="/challenges/">جرّب التحديات أونلاين</a>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>

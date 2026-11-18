@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://mohanadgames.com/sitemap.xml
+
+Sitemap: https://www.mohanadgames.com/sitemap.xml

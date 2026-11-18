@@ -1,0 +1,23 @@
+{
+  "name": "mohanadgames-site",
+  "main": "./src/worker.js",
+  "account_id": "a4ad3a6068e68f0d92bac0640c03f274",
+  "compatibility_date": "2026-11-18",
+  "workers_dev": true,
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": [
+      "/google64d115a53f63ae51.html",
+      "/googledfa2bd03a612c26d.html"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  }
+}
