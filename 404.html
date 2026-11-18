@@ -8,7 +8,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -16,27 +16,31 @@
         <header class="site-header">
             <div class="header-inner">
                 <a class="brand" href="/">
-                    <img src="/images/logo-sm.png" alt="شعار Mohanad Games" width="38" height="38">
-                    <span>Mohanad Games</span>
+                    <span class="brand-mark">
+                        <img src="/images/brand-mark.png" alt="Mohanad Games" width="42" height="42">
+                    </span>
+                    <span class="brand-text">
+                        <span class="brand-name">Mohanad Games</span>
+                        <span class="brand-sub">استوديو تطوير ألعاب</span>
+                    </span>
                 </a>
                 <nav class="site-nav" aria-label="التنقل الرئيسي">
                     <a href="/">الرئيسية</a>
+                    <a href="/games/">أعمالنا</a>
                     <a href="/games/fathal-syria/">فطحل سوريا</a>
-                    <a href="/games/">ألعابنا</a>
-                    <a href="/challenges/">تحديات وألغاز</a>
+                    <a href="/challenges/">التحديات</a>
                 </nav>
             </div>
         </header>
 
-        <main style="display:flex;align-items:center;justify-content:center;text-align:center;padding-top:4rem;">
+        <main style="display:flex;align-items:center;justify-content:center;text-align:center;padding-top:4.5rem;">
             <div>
-                <span class="badge badge-gold">خطأ 404</span>
-                <h1 style="margin:0.5rem 0 0.75rem;">عذراً، هذه الصفحة غير موجودة</h1>
-                <p style="color:var(--muted);max-width:30rem;margin:0 auto 1.75rem;">ربما تم نقل الرابط أو حذفه. يمكنك العودة إلى الصفحة الرئيسية أو تجربة تحديات الدراما والأمثال السورية مباشرة:</p>
-                <div class="actions">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> خطأ 404</span>
+                <h1 style="margin:0.4rem 0 0.75rem;">عذراً، هذه الصفحة غير موجودة</h1>
+                <p style="color:var(--muted);max-width:28rem;margin:0 auto 1.75rem;">ربما تم نقل الرابط أو حذفه. يمكنك العودة إلى الصفحة الرئيسية للاستوديو أو استكشاف ألعابنا:</p>
+                <div class="actions actions-center">
                     <a class="btn btn-primary" href="/">الصفحة الرئيسية</a>
-                    <a class="btn btn-blue" href="/games/fathal-syria/">لعبة فطحل سوريا</a>
-                    <a class="btn btn-ghost" href="/challenges/">جرّب التحديات أونلاين</a>
+                    <a class="btn btn-secondary" href="/games/">جميع الألعاب</a>
                 </div>
             </div>
         </main>

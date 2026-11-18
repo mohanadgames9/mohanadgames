@@ -370,16 +370,16 @@
                     '<div class="quiz-score-ring">' + score + "/" + total + "</div>" +
                     "<h3>" + rankText + "</h3>" +
                     "<p>هذا مجرد نموذج مصغّر! في تطبيق <strong>فطحل سوريا</strong> تنتظرك مئات المشاهد بالصور، مسابقة يومية متجددة، ولوحة متصدرين مع لاعبين من كل مكان.</p>" +
-                    '<div class="actions">' +
+                    '<div class="actions actions-center">' +
                         '<a class="btn btn-whatsapp" href="' + waHref + '" target="_blank" rel="noopener" data-share-wa>تحدَّ أصدقاءك على واتساب</a>' +
-                        '<button type="button" class="btn btn-ghost" data-copy-score>نسخ النتيجة</button>' +
-                        '<button type="button" class="btn btn-ghost" data-retry>أعد التحدي</button>' +
+                        '<button type="button" class="btn btn-secondary" data-copy-score>نسخ النتيجة</button>' +
+                        '<button type="button" class="btn btn-secondary" data-retry>أعد التحدي</button>' +
                     "</div>" +
                     '<div class="quiz-result-cta">' +
                         "<p><strong>جاهز للمنافسة الحقيقية ودخول لوحة المتصدرين؟</strong> حمّل اللعبة مجاناً الآن:</p>" +
-                        '<div class="actions">' +
+                        '<div class="actions actions-center">' +
                             '<a class="btn btn-primary" href="' + quiz.playStore + '" target="_blank" rel="noopener" data-store="google_play" data-game="fathal_syria" data-placement="quiz_result">تحميل من Google Play</a>' +
-                            '<a class="btn btn-blue" href="' + quiz.appStore + '" target="_blank" rel="noopener" data-store="app_store" data-game="fathal_syria" data-placement="quiz_result">تحميل من App Store</a>' +
+                            '<a class="btn btn-store" href="' + quiz.appStore + '" target="_blank" rel="noopener" data-store="app_store" data-game="fathal_syria" data-placement="quiz_result">تحميل من App Store</a>' +
                         "</div>" +
                     "</div>" +
                 "</div>";
