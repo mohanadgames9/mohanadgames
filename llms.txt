@@ -1,0 +1,57 @@
+# Mohanad Games (استوديو ألعاب مهند)
+
+> Mohanad Games is an independent mobile game development and publishing studio founded by Mohanad Najih Attieh (مهند ناجح عطية), creating original cultural trivia, real-time multiplayer, trick-puzzle, and story-driven mobile games for iOS and Android, with 30+ published titles on the Apple App Store and Google Play.
+
+## Studio Overview
+- **Studio Name:** Mohanad Games (ألعاب مهند / استوديو ألعاب مهند)
+- **Founder & Lead Developer:** Mohanad Najih Attieh (مهند ناجح عطية)
+- **Founder LinkedIn:** https://www.linkedin.com/in/mohanad-attieh
+- **Official Website:** https://www.mohanadgames.com/
+- **English Studio Page:** https://www.mohanadgames.com/en/
+- **Business & Support Email:** info@mohanadgames.com
+- **Platforms:** Apple App Store (iOS / iPadOS) & Google Play Store (Android)
+- **Google Play Developer Catalog:** https://play.google.com/store/apps/dev?id=6796927971116266798
+- **Apple App Store Developer Catalog:** https://apps.apple.com/us/developer/mohanad-najih-attieh/id1658812059
+
+## Flagship & Featured Games
+
+### 1. فطحل سوريا (Fathal Syria)
+- **Genre:** Arabic Cultural Trivia, Visual Memory & Real-Time Multiplayer
+- **Summary:** Fast-reflex trivia game celebrating Syrian television drama history, iconic series scenes, actors, and Levantine proverbs, featuring daily tournaments, live multiplayer rooms, and leaderboards.
+- **Official Page:** https://www.mohanadgames.com/games/fathal-syria/
+- **Google Play:** https://play.google.com/store/apps/details?id=com.fathalsyria.app
+- **App Store:** https://apps.apple.com/us/app/%D9%81%D8%B7%D8%AD%D9%84-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/id6797496747
+
+### 2. Think More Think Less
+- **Genre:** Trick & Lateral-Thinking Logic Puzzles
+- **Summary:** Hand-crafted trick-puzzle game where every level is a compact interactive scene with a clever twist hiding in plain sight. Players drag, tap, and experiment beyond the obvious move.
+- **Google Play:** https://play.google.com/store/apps/details?id=com.thinkmore.thinkless.game
+- **App Store:** https://apps.apple.com/us/app/think-more-think-less/id6824479228
+
+### 3. يوميات ريان (Rayan's Diary)
+- **Genre:** Casual Comedy & Puzzle Adventure
+- **Summary:** Story-driven puzzle adventure following a lovable procrastinator named Rayan through humorous everyday dilemmas with unexpected solutions.
+- **App Store:** https://apps.apple.com/us/app/%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D9%86/id6754023958
+
+### 4. قصة حب شاكر (Shakr Love Story)
+- **Genre:** Narrative Romance & Brainteasers
+- **Summary:** Story-and-puzzle journey following Shakr and Tala across Arab and global cities, solving situational challenges in each chapter.
+- **App Store:** https://apps.apple.com/us/app/shakr-love-story/id6759489066
+
+### 5. Additional Published Titles
+- **تحدي المسلسلات (Series Challenge):** Arabic word and crossword puzzles inspired by Syrian and Arab television drama.
+- **حزورات مهند — ألغاز وإيموجي (Al-Hazzazir):** Emoji riddles, proverbs, and lateral-thinking Arabic word puzzles.
+- **التحدي الأزرق / التحدي الرياضي / الفهيم العربي / كلمات متقاطعة:** Specialized Arabic crossword, sports trivia, and multiplayer word-discovery games.
+
+## Key Website Sections
+- [Games Portfolio](https://www.mohanadgames.com/games/): Overview of flagship and catalog releases.
+- [Fathal Syria Official Page](https://www.mohanadgames.com/games/fathal-syria/): Game modes, screenshots, interactive demo, and FAQs.
+- [Interactive Web Challenges](https://www.mohanadgames.com/challenges/): Browser-playable Syrian TV drama quiz and Syrian proverbs challenge.
+- [Privacy Policy](https://www.mohanadgames.com/privacy-policy/): Official data handling and account deletion policy.
+
+## Official Social Profiles
+- LinkedIn: https://www.linkedin.com/in/mohanad-attieh
+- Instagram: https://www.instagram.com/mohnad_dev
+- Facebook: https://www.facebook.com/mohanadgames9/
+- YouTube: https://www.youtube.com/channel/UCLDBbjBC-BsjFqyLDtEZr2A
+- TikTok: https://www.tiktok.com/@mohanaddevelopergame
