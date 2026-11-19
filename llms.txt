@@ -22,20 +22,22 @@
 - **Google Play:** https://play.google.com/store/apps/details?id=com.fathalsyria.app
 - **App Store:** https://apps.apple.com/us/app/%D9%81%D8%B7%D8%AD%D9%84-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/id6797496747
 
-### 2. Think More Think Less
+### 2. فكّر أكثر فكّر أقل (Think More Think Less)
 - **Genre:** Trick & Lateral-Thinking Logic Puzzles
 - **Summary:** Hand-crafted trick-puzzle game where every level is a compact interactive scene with a clever twist hiding in plain sight. Players drag, tap, and experiment beyond the obvious move.
-- **Google Play:** https://play.google.com/store/apps/details?id=com.thinkmore.thinkless.game
+- **Google Play:** https://play.google.com/store/apps/details?id=captain.thinkmorethinkless.game
 - **App Store:** https://apps.apple.com/us/app/think-more-think-less/id6824479228
 
-### 3. يوميات ريان (Rayan's Diary)
+### 3. يوميات ريان (Rayan's Diary / Ryan Adventures)
 - **Genre:** Casual Comedy & Puzzle Adventure
 - **Summary:** Story-driven puzzle adventure following a lovable procrastinator named Rayan through humorous everyday dilemmas with unexpected solutions.
+- **Google Play:** https://play.google.com/store/apps/details?id=com.mohanadgames.rayan
 - **App Store:** https://apps.apple.com/us/app/%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D9%86/id6754023958
 
 ### 4. قصة حب شاكر (Shakr Love Story)
 - **Genre:** Narrative Romance & Brainteasers
 - **Summary:** Story-and-puzzle journey following Shakr and Tala across Arab and global cities, solving situational challenges in each chapter.
+- **Google Play:** https://play.google.com/store/apps/details?id=com.mohanadgames.shakr
 - **App Store:** https://apps.apple.com/us/app/shakr-love-story/id6759489066
 
 ### 5. Additional Published Titles
